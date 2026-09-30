@@ -1,21 +1,9 @@
 # Video thực thi test (YouTube Unlisted)
 
-Yêu cầu của đề:
-- **≥ 5 video**, mỗi video **≤ 60 giây**, quay lúc thực thi test trên thiết bị thật.
-- Video phải có **giọng nói của chính bạn** (không dùng giọng AI).
-- Đăng ở chế độ **Unlisted** trên YouTube; chỉ dán link ở đây, không nộp file video.
-
-| # | Test case (ID) | Link YouTube (Unlisted) | Thời lượng | Có giọng nói | Ngày quay |
-|---|---|---|---|---|---|
-| 1 | `[TỰ ĐIỀN]` | `[TỰ ĐIỀN]` | | | |
-| 2 | `[TỰ ĐIỀN]` | `[TỰ ĐIỀN]` | | | |
-| 3 | `[TỰ ĐIỀN]` | `[TỰ ĐIỀN]` | | | |
-| 4 | `[TỰ ĐIỀN]` | `[TỰ ĐIỀN]` | | | |
-| 5 | `[TỰ ĐIỀN]` | `[TỰ ĐIỀN]` | | | |
-
-## Danh sách kiểm tra
-
-- [ ] ≥ 5 video, mỗi video ≤ 60 giây
-- [ ] Có giọng nói của mình trong mọi video
-- [ ] Link ở chế độ Unlisted và mở được khi chưa đăng nhập
-- [ ] Mỗi link khớp với test case tương ứng và cột "Video" trong Excel
+| #   | Test case (ID) | Link YouTube (Unlisted)                               | Thời lượng | Có giọng nói | Ngày quay |
+| --- | -------------- | ----------------------------------------------------- | ---------- | ------------ | --------- |
+| 1   | 01-001         | https://youtube.com/shorts/et3gtzuObck?feature=share | 22s        | Có           | 30/9/2026 |
+| 2   | 01-004         | https://youtube.com/shorts/1sZU2MDkQWU?feature=share  | 28s        | Có           | 30/9/2026 |
+| 3   | 01-005         | https://youtube.com/shorts/NjJz7VyT0h4                | 14s        | Có           | 30/9/2026 |
+| 4   | 02-005         | https://youtube.com/shorts/HRBWQmdAtM8?feature=share  | 25s        | Có           | 30/9/2026 |
+| 5   | 04-001         | https://youtube.com/shorts/k21fPitYVVc?feature=share  | 20s        | Có           | 30/9/2026 |

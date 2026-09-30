@@ -200,9 +200,33 @@ Kết luận của AI: 3 tin đã đánh dấu (6, 9, 10) đều có nội dung 
 - Phản hồi đầy đủ: bản gốc 15 test case do AI tạo được lưu nguyên văn ở [ai_testcases_original.md](ai_testcases_original.md) (không sửa). AI cũng ghi các test case vào `req3-device/excel/HW01_TestCases.xlsx`, `HW01_TestSummaryReport.xlsx` và `req3-device/testcases.md`, điền dòng "Chức năng chính sẽ test" trong `device.md`. Các giả định về thiết bị (4 nút bấm, không rõ quay/hẹn giờ/nghiêng) ghi trong file gốc và trong `testcases.md`.
 - Lưu ý: đây là artifact do AI tạo → cần một mục trong [AI-02] AI Audit Report (verdict từng test case, phần bạn sửa/thêm, ≥ 3 edge case AI bỏ sót).
 
+## Mục 21 — Verify 15 test case sau khi sinh viên chỉnh (Yêu cầu 3)
+- Timestamp: 09:55 30/09/2026
+- Công cụ: Claude Code — Sonnet 5.5 (đọc `testcases.md`, `device.md`, Excel; đồng bộ Excel bằng openpyxl)
+- Prompt: "tôi đã chỉnh lại thêm 3 test case"
+- Phản hồi: Claude kiểm tra danh sách sau khi sinh viên thay 01-005, 02-005 và thay 03-005 bằng 04-001 (thêm chức năng 04 — đảo gió); phát hiện Excel chưa đồng bộ với `testcases.md`; đồng bộ Function list, Test cases, Test summary report (4 chức năng, 15 test case) và dòng "Chức năng chính" trong `device.md`; báo các điểm cần sửa (xem transcript).
+  <!-- TODO: dán nguyên văn từ transcript -->
+- Ghi chú: 3 test case sinh viên thay/thêm (01-005, 02-005, 04-001) do sinh viên tự nghĩ ra và đánh dấu `Y`; bản gốc của AI vẫn nằm nguyên ở `ai_testcases_original.md`. Bản sao lưu trước khi đồng bộ nằm ở thư mục scratchpad.
+
+## Mục 22 — Verify video và kết quả thực thi test (Yêu cầu 3)
+- Timestamp: 10:36 30/09/2026
+- Công cụ: Claude Code — Sonnet 5.5 (kiểm tra 5 link YouTube bằng curl, đồng bộ Excel bằng openpyxl)
+- Prompt: "tôi đã thêm video và actual ouput của các test trong video"
+- Phản hồi: Claude kiểm tra 5 video (mở được không cần đăng nhập, chế độ Unlisted, độ dài 14–27 giây, tiêu đề khớp test case); thấy cột Verdict còn trống ở 5 test case đã chạy và Excel chưa đồng bộ; điền Verdict theo Actual của sinh viên (4 Pass, 1 Fail), sửa ký tự thừa, điền kết quả thực tế vào bảng edge case, đồng bộ Excel (Actual, Status, ngày, link video) và Test summary report, ghi bug từ 01-005 vào Bug report. Claude không xem được nội dung video nên không xác nhận được giọng nói.
+  <!-- TODO: dán nguyên văn từ transcript -->
+- Ghi chú: các Actual do sinh viên tự ghi từ video; bản sao lưu trước khi đồng bộ nằm ở thư mục scratchpad.
+
+## Mục 23 — Điền sheet Test Case Checklist (Yêu cầu 3)
+- Timestamp: 10:43 30/09/2026
+- Công cụ: Claude Code — Sonnet 5.5 (đánh giá 15 test case theo 27 tiêu chí, ghi vào Excel bằng openpyxl)
+- Prompt: "trước tiên hãy điền sheet checklist"
+- Phản hồi: Claude điền `req3-device/excel/HW01_TestcaseChecklist.xlsx` (27 tiêu chí × TC1–TC15, cột Note giải thích; sheet "TC mapping" ánh xạ TC1–TC15 sang ID) và thêm mục "Kết quả Test Case Checklist" vào `req3-device/testcases.md`.
+  <!-- TODO: dán nguyên văn từ transcript -->
+- Ghi chú: đây là đánh giá do AI thực hiện trên cả test case của AI lẫn test case do sinh viên tự nghĩ (01-005, 02-005, 04-001); sinh viên cần rà soát và điều chỉnh các dấu `x`/`o`/`i` cho đúng nhận định của mình. Bản sao lưu trước khi điền nằm ở thư mục scratchpad.
+
 ## Việc còn lại cho sinh viên trước khi nộp
 
-- Dán nguyên văn phản hồi của Claude vào các mục có `TODO` (Mục 01–03, 05–08, 10–12, 15–16, 18–20) từ transcript Claude Code; timestamp có dấu ≈ là ước lượng.
+- Dán nguyên văn phản hồi của Claude vào các mục có `TODO` (Mục 01–03, 05–08, 10–12, 15–16, 18–23) từ transcript Claude Code; timestamp có dấu ≈ là ước lượng.
 - Rà soát/chỉnh sửa AI Impact Analysis do AI soạn (Mục 10) và điền mô tả công việc tin 02.
 - Đối chiếu nguyên văn dòng yêu cầu AI của tin 6 trên trang thật (hai lần trích của AI khác nhau).
 - Điền mục "Cách sinh viên xử lý sau đó" cho các mục còn thiếu, tạo bản PDF cho jobs.md.

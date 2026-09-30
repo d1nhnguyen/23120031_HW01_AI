@@ -11,7 +11,7 @@ Yêu cầu của đề: chọn **một thiết bị gia dụng cụ thể** củ
 | Model                        | B4 Quạt lỡ nhựa công nghiệp                                                   |
 | Năm sản xuất                 | Không tìm thấy                                                                |
 | Số serial (che 4 ký tự giữa) | Không tìm thấy                                                                |
-| Chức năng chính sẽ test      | Điều khiển nút bấm (tắt/tốc độ), vận hành và hiệu năng cơ bản, an toàn cơ khí |
+| Chức năng chính sẽ test      | Điều khiển nút bấm (tắt/tốc độ), vận hành và hiệu năng cơ bản, an toàn cơ khí, điều khiển đảo gió |
 
 ## Ảnh bằng chứng
 

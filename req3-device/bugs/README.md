@@ -10,4 +10,4 @@ Theo danh sách nộp bài của đề HW01, thư mục này chứa ảnh bug t�
 
 | Bug ID | Test case | Tóm tắt | Ảnh Mantis | Trạng thái |
 |---|---|---|---|---|
-| 01 | `[TỰ ĐIỀN]` | `[TỰ ĐIỀN]` | bug_01.png | Open |
+| 01 | 01-005 | Hai nút tốc độ 1 và 2 cùng lún xuống khi nhấn đồng thời | bug_01.png | Open |
