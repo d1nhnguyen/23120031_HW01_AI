@@ -1,0 +1,158 @@
+* commit 86e1155079a5cf48a77c6de30bd328a9e28cb6fc
+| Author: d1nhnguyen <dinhnguyen7205@gmail.com>
+| Date:   Wed Sep 30 12:24:24 2026 +0700
+| 
+|     complete docs
+| 
+|  ai/AI-02_AuditReport.md                           |  219 ++--
+|  ai/AI-02_AuditReport.pdf                          |  Bin 222713 -> 190083 bytes
+|  ai/AI-03_Disclosure.md                            |   62 +-
+|  ai/AI-03_Disclosure.pdf                           |  Bin 122547 -> 100425 bytes
+|  ai/AI-05_PrivacyChecklist.md                      |   68 +-
+|  ai/AI-05_PrivacyChecklist.pdf                     |  Bin 105689 -> 57073 bytes
+|  ai/chatgpt_outputs/chatgpt_message_15_defects.md  |   17 +
+|  ai/chatgpt_outputs/chatgpt_output_5_ai_defects.md | 1186 +++++++++++++++++++
+|  ai/prompt_log.md                                  |   74 +-
+|  ai/transcripts/2026-09-29_30_session_main.md      |  192 ++-
+|  report/HW01_report.md                             |  232 ++--
+|  report/HW01_report.pdf                            |  Bin 670948 -> 665583 bytes
+|  req1-jobs/mindmap/qa-qc-roles.md                  |    5 +-
+|  req3-device/bugs/README.md                        |   18 +-
+|  req3-device/device.md                             |    2 -
+|  req3-device/excel/HW01_TestSummaryReport.xlsx     |  Bin 8704 -> 8807 bytes
+|  req3-device/testcases.md                          |    7 -
+|  17 files changed, 1711 insertions(+), 371 deletions(-)
+| 
+* commit 3289bfb4cc670835233e4001e9f807dbb4d0c2eb
+| Author: d1nhnguyen <dinhnguyen7205@gmail.com>
+| Date:   Wed Sep 30 11:21:46 2026 +0700
+| 
+|     complete homework
+| 
+|  ai/prompt_log.md       |   7 ++
+|  report/HW01_report.md  | 205 +++++++++++++++++++++++++++++++++++++++++------
+|  report/HW01_report.pdf | Bin 0 -> 670948 bytes
+|  3 files changed, 189 insertions(+), 23 deletions(-)
+| 
+* commit 35f95d27c2f4f6c81acbe9cc6e28e1fdff44ffd0
+| Author: d1nhnguyen <dinhnguyen7205@gmail.com>
+| Date:   Wed Sep 30 11:09:11 2026 +0700
+| 
+|     add docs
+| 
+|  ai/AI-02_AuditReport.md                           |  176 ++
+|  ai/AI-02_AuditReport.pdf                          |  Bin 0 -> 222713 bytes
+|  ai/AI-03_Disclosure.md                            |  109 +
+|  ai/AI-03_Disclosure.pdf                           |  Bin 0 -> 122547 bytes
+|  ai/AI-05_PrivacyChecklist.md                      |   57 +
+|  ai/AI-05_PrivacyChecklist.pdf                     |  Bin 0 -> 105689 bytes
+|  ai/prompt_log.md                                  |  235 ++-
+|  .../2026-09-28_session_HW01-policies.md           |   91 +
+|  ai/transcripts/2026-09-29_30_session_main.md      | 2010 +++++++++++++++++++
+|  ai/transcripts/2026-09-29_session_git-clone-1.md  |  201 ++
+|  ai/transcripts/2026-09-29_session_git-clone-2.md  |   29 +
+|  ai/transcripts/2026-09-29_session_plan-HW01.md    |  174 ++
+|  report/HW01_report.md                             |    4 +
+|  req3-device/bugs/README.md                        |    4 +-
+|  req3-device/excel/HW01_TestSummaryReport.xlsx     |  Bin 8863 -> 8704 bytes
+|  15 files changed, 3017 insertions(+), 73 deletions(-)
+| 
+* commit 8c71ca20382118f35b75e177db30edec7e245bd5
+| Author: d1nhnguyen <dinhnguyen7205@gmail.com>
+| Date:   Wed Sep 30 10:52:46 2026 +0700
+| 
+|     Complete requirement 3: videos + edge cases
+| 
+|  ai/prompt_log.md           | 26 ++++++++++++-
+|  req3-device/bugs/README.md |  2 +-
+|  req3-device/device.md      |  2 +-
+|  req3-device/testcases.md   | 93 ++++++++++++++++++++++++--------------------
+|  req3-device/videos.md      | 26 ++++---------
+|  5 files changed, 84 insertions(+), 65 deletions(-)
+| 
+* commit 70b3eceedcebbcae678d69d665b7d8134d8483ba
+| Author: d1nhnguyen <dinhnguyen7205@gmail.com>
+| Date:   Wed Sep 30 10:51:34 2026 +0700
+| 
+|     complete requirement 3
+| 
+|  req3-device/excel/HW01_TestCases.xlsx         | Bin 11545 -> 12324 bytes
+|  req3-device/excel/HW01_TestSummaryReport.xlsx | Bin 8653 -> 8863 bytes
+|  req3-device/excel/HW01_TestcaseChecklist.xlsx | Bin 8649 -> 11234 bytes
+|  3 files changed, 0 insertions(+), 0 deletions(-)
+| 
+* commit b87a7b4a779790f3da7d603d77924aff158e990e
+| Author: d1nhnguyen <dinhnguyen7205@gmail.com>
+| Date:   Wed Sep 30 09:38:52 2026 +0700
+| 
+|     draft for requirement 3
+| 
+|  ai/ai_testcases_original.md                   | 187 ++++++++++++++++++++++++
+|  ai/prompt_log.md                              |   9 +-
+|  req3-device/device.md                         |  25 ++--
+|  req3-device/device_with_student_id.jpg        | Bin 0 -> 220064 bytes
+|  req3-device/excel/HW01_TestCases.xlsx         | Bin 13548 -> 11545 bytes
+|  req3-device/excel/HW01_TestSummaryReport.xlsx | Bin 13503 -> 8653 bytes
+|  req3-device/excel/HW01_TestcaseChecklist.xlsx | Bin 13019 -> 8649 bytes
+|  req3-device/testcases.md                      |  93 +++++++++++-
+|  req3-device/videos.md                         |  24 ++-
+|  9 files changed, 319 insertions(+), 19 deletions(-)
+| 
+* commit 5b42367f270021aab791a9a24d49023c752dc477
+| Author: d1nhnguyen <dinhnguyen7205@gmail.com>
+| Date:   Wed Sep 30 08:36:16 2026 +0700
+| 
+|     complete requirement 2
+| 
+|  ai/prompt_log.md                            |  121 +-
+|  report/HW01_report.md                       |   12 +-
+|  req1-jobs/mindmap/README.md                 |    9 +-
+|  req1-jobs/mindmap/qa-qc-roles.md            |  115 ++
+|  req1-jobs/mindmap/qa-qc-roles.png           |  Bin 0 -> 165759 bytes
+|  req1-jobs/mindmap/qa-qc-roles_annotated.png |  Bin 0 -> 170331 bytes
+|  req2-defects/defects.md                     | 1807 ++++++++++++++++++++++++-
+|  req3-device/bugs/README.md                  |   13 +
+|  8 files changed, 2050 insertions(+), 27 deletions(-)
+| 
+* commit f681338d315dd08390dee3abcb9cfd12d178c885
+| Author: d1nhnguyen <dinhnguyen7205@gmail.com>
+| Date:   Tue Sep 29 23:23:01 2026 +0700
+| 
+|     complete requirement 1 with 10 qa/qc job
+| 
+|  ai/prompt_log.md                   | 112 ++++++++++++++++++++++++++-
+|  req1-jobs/jobs.md                  | 146 +++++++++++++++++++++++++++++++++--
+|  req1-jobs/screenshots/.gitkeep     |   0
+|  req1-jobs/screenshots/job1.png     | Bin 0 -> 353003 bytes
+|  req1-jobs/screenshots/job10_AI.png | Bin 0 -> 159459 bytes
+|  req1-jobs/screenshots/job2.png     | Bin 0 -> 298076 bytes
+|  req1-jobs/screenshots/job3.png     | Bin 0 -> 295479 bytes
+|  req1-jobs/screenshots/job4.png     | Bin 0 -> 291549 bytes
+|  req1-jobs/screenshots/job5.png     | Bin 0 -> 270350 bytes
+|  req1-jobs/screenshots/job6_AI.png  | Bin 0 -> 297889 bytes
+|  req1-jobs/screenshots/job7.png     | Bin 0 -> 293177 bytes
+|  req1-jobs/screenshots/job8.png     | Bin 0 -> 256236 bytes
+|  req1-jobs/screenshots/job9_AI.png  | Bin 0 -> 171102 bytes
+|  13 files changed, 248 insertions(+), 10 deletions(-)
+| 
+* commit 1fdcb2db27cbe559ff265eaf39a0266ab8919f79
+  Author: d1nhnguyen <dinhnguyen7205@gmail.com>
+  Date:   Tue Sep 29 22:19:01 2026 +0700
+  
+      initial
+  
+   README.md                                     |  14 ++++++++++
+   ai/prompt_log.md                              |   9 +++++++
+   report/HW01_report.md                         |  34 ++++++++++++++++++++++++
+   req1-jobs/jobs.md                             |  12 +++++++++
+   req1-jobs/mindmap/README.md                   |   8 ++++++
+   req1-jobs/screenshots/.gitkeep                |   0
+   req2-defects/defects.md                       |   9 +++++++
+   req3-device/bugs/.gitkeep                     |   0
+   req3-device/device.md                         |  11 ++++++++
+   req3-device/excel/HW01_TestCases.xlsx         | Bin 0 -> 13548 bytes
+   req3-device/excel/HW01_TestSummaryReport.xlsx | Bin 0 -> 13503 bytes
+   req3-device/excel/HW01_TestcaseChecklist.xlsx | Bin 0 -> 13019 bytes
+   req3-device/testcases.md                      |   7 +++++
+   req3-device/videos.md                         |   5 ++++
+   14 files changed, 109 insertions(+)
