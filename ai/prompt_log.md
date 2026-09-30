@@ -313,6 +313,13 @@ Kết luận của AI: 3 tin đã đánh dấu (6, 9, 10) đều có nội dung 
 - Tóm tắt phản hồi: Claude soạn AI-05 (tick sẵn chỉ những mục có bằng chứng rõ; các mục cần sinh viên xác nhận để trống). Khi soạn, Claude nhận ra mục "Không nhập dữ liệu cá nhân" không thể tick vì AI đã đọc ảnh thẻ sinh viên (09:14:00 30/09/2026) và ảnh chụp tin tuyển dụng có email (22:29:30 29/09/2026); ghi thành "ngoại lệ cần khai báo". Claude viết bản nháp AI Critique 278 từ, thêm Artifact #10 vào AI-02 (thống kê: 10 artifact, 2 VALID, 1 INVALID, 7 INCOMPLETE) và sửa AI-03 để khai báo việc AI soạn nháp AI Critique.
 - Phản hồi đầy đủ (nguyên văn): xem [transcripts/2026-09-29_30_session_main.md](transcripts/2026-09-29_30_session_main.md), các mục AI (Claude) ngay sau mốc [11:04:20 30/09/2026].
 
+## Mục 27 — Soạn báo cáo chính (tóm tắt Yêu cầu 1–3)
+- Timestamp: 11:10:27 30/09/2026
+- Công cụ: Claude Code — Sonnet 5.5 (sinh `report/HW01_report.md` từ jobs.md, defects.md, testcases.md, AI-02; xuất PDF bằng pandoc và Chrome headless)
+- Prompt: "làm báo cáo chính, nhưng hiện tại phần req đang quá dài, nên tóm lại nhưng đầy đủ các đầu mục trong yêu cầu" kèm đề bài Yêu cầu 2 và nhận xét "hơn 1000 dòng là quá nhiều"
+- Tóm tắt phản hồi: Claude tóm tắt Yêu cầu 1 (bảng 10 tin, AI Impact, mindmap và 3 lỗi), Yêu cầu 2 (bảng 20 lỗi đủ nguồn, mô tả, severity, hậu quả, giải pháp; mục AI thiên lệch), Yêu cầu 3 (thiết bị, 15 test case, edge case, video, tổng kết), tóm tắt AI Audit, chép AI Critique và Mandatory Disclosure, bảng tự chấm đề xuất (88 điểm) và danh sách file nộp; báo cáo dài 207 dòng, PDF 7 trang.
+- Phản hồi đầy đủ (nguyên văn): xem [transcripts/2026-09-29_30_session_main.md](transcripts/2026-09-29_30_session_main.md), các mục AI (Claude) ngay sau mốc [11:10:27 30/09/2026].
+
 ## Việc còn lại cho sinh viên trước khi nộp
 
 - Xuất lại transcript phiên chính (`transcripts/2026-09-29_30_session_main.md`) ngay trước khi nộp.
