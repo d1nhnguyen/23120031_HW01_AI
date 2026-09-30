@@ -193,9 +193,16 @@ Kết luận của AI: 3 tin đã đánh dấu (6, 9, 10) đều có nội dung 
 - Phản hồi: Claude tạo khung trong `req3-device/`: `device.md`, `testcases.md`, `videos.md`, `bugs/README.md`; dựng lại 3 file Excel từ template (`HW01_TestCases.xlsx`, `HW01_TestcaseChecklist.xlsx`, `HW01_TestSummaryReport.xlsx`) và cập nhật mục 3 trong `report/HW01_report.md`. Bản sao lưu 3 file Excel trước khi sửa nằm ở thư mục scratchpad.
   <!-- TODO: dán nguyên văn từ transcript -->
 
+## Mục 20 — AI tạo 15 test case cho quạt Kenfan B4 (Yêu cầu 3, G9.3)
+- Timestamp: 09:16 30/09/2026
+- Công cụ: Claude Code — Sonnet 5.5 (đọc ảnh thiết bị, tự thiết kế test case, ghi vào Excel và Markdown)
+- Prompt: "Theo đề bài thì có vẻ nên là bạn tự tạo test case, sau đó tôi sẽ kiểm tra lại và thêm edge case, video tôi sẽ thêm sau khi có test cases. thiết bị và ảnh thiết bị tôi đã thêm vào sẵn"
+- Phản hồi đầy đủ: bản gốc 15 test case do AI tạo được lưu nguyên văn ở [ai_testcases_original.md](ai_testcases_original.md) (không sửa). AI cũng ghi các test case vào `req3-device/excel/HW01_TestCases.xlsx`, `HW01_TestSummaryReport.xlsx` và `req3-device/testcases.md`, điền dòng "Chức năng chính sẽ test" trong `device.md`. Các giả định về thiết bị (4 nút bấm, không rõ quay/hẹn giờ/nghiêng) ghi trong file gốc và trong `testcases.md`.
+- Lưu ý: đây là artifact do AI tạo → cần một mục trong [AI-02] AI Audit Report (verdict từng test case, phần bạn sửa/thêm, ≥ 3 edge case AI bỏ sót).
+
 ## Việc còn lại cho sinh viên trước khi nộp
 
-- Dán nguyên văn phản hồi của Claude vào các mục có `TODO` (Mục 01–03, 05–08, 10–12, 15–16, 18–19) từ transcript Claude Code; timestamp có dấu ≈ là ước lượng.
+- Dán nguyên văn phản hồi của Claude vào các mục có `TODO` (Mục 01–03, 05–08, 10–12, 15–16, 18–20) từ transcript Claude Code; timestamp có dấu ≈ là ước lượng.
 - Rà soát/chỉnh sửa AI Impact Analysis do AI soạn (Mục 10) và điền mô tả công việc tin 02.
 - Đối chiếu nguyên văn dòng yêu cầu AI của tin 6 trên trang thật (hai lần trích của AI khác nhau).
 - Điền mục "Cách sinh viên xử lý sau đó" cho các mục còn thiếu, tạo bản PDF cho jobs.md.
