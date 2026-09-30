@@ -1,7 +1,5 @@
 # Yêu cầu 3 — Thiết bị vật lý
 
-Yêu cầu của đề: chọn **một thiết bị gia dụng cụ thể** của chính bạn (quạt, máy lọc nước, nồi cơm điện, bóng đèn thông minh...); không phải sản phẩm phần mềm.
-
 ## Thông tin thiết bị
 
 | Trường                       | Giá trị                                                                       |

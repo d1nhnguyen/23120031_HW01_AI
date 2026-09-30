@@ -2,13 +2,6 @@
 
 Nguồn dữ liệu gốc là [excel/HW01_TestCases.xlsx](excel/HW01_TestCases.xlsx). Bảng dưới đây là bản sao để đưa vào báo cáo (chính sách: bảng tổng hợp từ Excel phải được copy vào file Markdown).
 
-## Yêu cầu của đề
-
-- Thiết kế **15 test case**, mỗi test case có: Objective / Input / Steps / Expected / Actual / Verdict.
-- **≥ 3 test case là edge case mà công cụ AI KHÔNG tìm ra.**
-- Thực thi **≥ 5 test case trên thiết bị thật** và quay video ≤ 60 giây (có giọng nói của bạn), đăng YouTube Unlisted, ghi link ở [videos.md](videos.md).
-- Test case do AI tạo phải có mục trong AI Audit Report ([AI-02]): prompt, output, verdict, reasoning, bản sửa.
-
 ## Ánh xạ cột đề bài sang cột trong template Excel
 
 | Cột theo đề             | Cột trong `HW01_TestCases.xlsx` (sheet Test cases) |

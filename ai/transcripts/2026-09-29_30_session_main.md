@@ -1,6 +1,6 @@
 # Phiên Claude Code chính 29–30/09/2026 — làm HW01 (Yêu cầu 1, 2, 3 và AI audit)
 
-Công cụ: Claude Code (VSCode extension), model Claude Sonnet 5.5. Xuất tự động từ file transcript của Claude Code: chỉ gồm lời nhắn của sinh viên và câu trả lời bằng chữ của AI; không gồm nội dung gọi công cụ (đọc/ghi file, lệnh shell). Giờ theo múi giờ máy (UTC+7). Phiên chính vẫn đang diễn ra nên cần xuất lại trước khi nộp.
+Công cụ: Claude Code (VSCode extension), model Claude Sonnet 5.5. Xuất tự động từ file transcript của Claude Code: chỉ gồm lời nhắn của sinh viên và câu trả lời bằng chữ của AI; không gồm nội dung gọi công cụ (đọc/ghi file, lệnh shell). Giờ theo múi giờ máy (UTC+7). Xuất lần cuối lúc 11:24 30/09/2026; câu trả lời cuối của lượt kiểm tra cuối chưa nằm trong file.
 
 
 ---
@@ -2008,3 +2008,193 @@ Khi bạn chỉnh lại test case theo các gợi ý trên (thêm bước dọn 
 ### [10:53:22 30/09/2026] SINH VIÊN
 
 Kiểm tra prompt_log đã đủ chưa, sau đó làm tiếp các ai audit
+
+
+---
+
+### [10:56:41 30/09/2026] AI (Claude)
+
+Prompt log đã sắp xếp lại theo thời gian và dùng giờ chính xác từ transcript. Giờ tôi đọc mẫu AI-02 để dựng báo cáo audit.
+
+
+---
+
+### [10:59:37 30/09/2026] AI (Claude)
+
+Prompt log trước đó chưa đủ, tôi đã bổ sung. AI-02 đã soạn xong, nhưng sinh viên phải xác nhận các mục còn để trống trước khi nộp.
+
+## Prompt log
+
+Phát hiện và xử lý:
+- **Thiếu 6 phiên Claude Code trước phiên chính:** tôi đọc nhật ký các phiên Claude Code trên máy và thấy 6 lần bạn dùng AI cho HW01 chưa ghi. Gồm hai lần ngày 28/09 (đọc chính sách bài tập, tạo file checklist), lần lên kế hoạch và dọn thư mục Templates (tôi đã xóa 27 file mẫu), và hai phiên clone repository. Tôi thêm chúng thành Mục P1–P6.
+- **Giờ ước lượng:** nhiều mục ghi giờ ước lượng. Tôi sửa lại theo giờ chính xác từ nhật ký (Mục 01 là 22:10:01, không phải "≈21:50").
+- **Chỉ có tóm tắt, không có nguyên văn:** đề yêu cầu phản hồi đầy đủ của AI. Tôi xuất nguyên văn lời nhắn của bạn và câu trả lời bằng chữ của Claude ra thư mục [ai/transcripts/](transcripts/) (5 file, 120 KB) và gắn link vào từng mục.
+- **Thứ tự sai:** các mục ChatGPT (13, 14) nằm sau Mục 15 dù xảy ra sớm hơn. Tôi sắp xếp lại theo thời gian nên các mục cũ 12, 13, 14 đổi thành 14, 12, 13. Các mục khác giữ nguyên số nên link ở file khác vẫn đúng.
+
+Bạn cần làm thêm:
+- **ChatGPT, Mục 12:** chỉ ghi prompt hỏi về web search, nhưng phản hồi là 5 lỗi AI, nghĩa là còn ít nhất một prompt chưa ghi. Bạn cần bổ sung.
+- **ChatGPT, Mục 13:** thiếu bản gốc output, bạn cần dán bản gốc hoặc link chia sẻ.
+- **Phiên chính vẫn đang chạy:** cần xuất lại transcript trước khi nộp.
+- **Email và SSH trong transcript:** hai file transcript của phiên clone git có email và tên cấu hình SSH của bạn, nên cân nhắc trước khi nộp.
+
+## AI-02 AI Audit Report
+
+[AI-02_AuditReport.md](AI-02_AuditReport.md) và bản PDF (8 trang) theo cấu trúc template, mỗi artifact có 5 mục.
+
+| # | Artifact | Verdict |
+|---|---|---|
+| 1 | Mindmap QA/QC | INCOMPLETE |
+| 2 | 5 lỗi AI/LLM (ChatGPT) | INCOMPLETE |
+| 3 | 15 lỗi phần mềm còn lại (ChatGPT) | INCOMPLETE |
+| 4 | Mục "AI thiên lệch" | VALID |
+| 5 | Mô tả công việc và kỹ năng của 10 tin | INCOMPLETE |
+| 6 | AI Impact Analysis | INCOMPLETE (tạm) |
+| 7 | 15 test case | INCOMPLETE |
+| 8 | Sheet Checklist | VALID (tạm) |
+
+Tỉ lệ độ chính xác: 2 VALID (25%), 0 INVALID, 6 INCOMPLETE (75%). Phần kết luận (khi nào nên dùng AI) và Mandatory Disclosure đã có bản nháp.
+
+Bạn cần rà soát trước khi nộp:
+- **Verdict và lý do:** đây là bản nháp do AI soạn, bạn nên chỉnh theo nhận định của mình. Verdict của artifact 6 (AI Impact Analysis) và 8 (Checklist) là tạm thời vì bạn chưa rà soát.
+- **Chỗ để trống:** lớp/khoá, ngày, chữ ký, và các mục `[SV XÁC NHẬN]`. Mandatory Disclosure là lời cam đoan của bạn nên tôi để bạn tự xác nhận.
+- **Artifact 3 thiếu output gốc:** chưa có bản gốc của ChatGPT. Tôi cũng chưa kiểm chứng từng câu mô tả kỹ thuật của 15 lỗi, chỉ đối chiếu điểm CVSS và link.
+
+Việc còn lại: AI-03 (Disclosure), AI-05 (Privacy Checklist), phần AI Critique 200–300 từ và báo cáo chính. Tôi đã ghi lần này vào prompt log ở Mục 24. Bạn muốn làm phần nào tiếp?
+
+
+---
+
+### [11:01:41 30/09/2026] SINH VIÊN
+
+Tiếp tục với AI-03
+
+
+---
+
+### [11:03:20 30/09/2026] AI (Claude)
+
+Đang bổ sung vào AI-02 một artifact mới (bản nháp bug do AI viết, đã gỡ) để báo cáo audit phản ánh đúng sự việc.
+
+
+---
+
+### [11:03:48 30/09/2026] AI (Claude)
+
+AI-03 đã soạn xong. Khi soạn, tôi phát hiện một lỗi của chính mình ở lượt trước và đã sửa.
+
+**Lỗi của tôi: bug report do AI viết.** Thoả thuận AI mục 11 quy định "Bug report: 100% sinh viên viết; AI không được nháp mô tả". Ở lượt 10:34:52 tôi đã tự điền tóm tắt và các bước tái hiện bug 01-005 vào sheet Bug report và [bugs/README.md](../req3-device/bugs/README.md). Tôi đã gỡ phần đó, thay bằng `[SV TỰ VIẾT]`. Bạn cần tự viết mô tả bug từ quan sát của mình.
+
+Tôi cũng ghi việc này ở các chỗ sau:
+- **AI-03:** khai báo rõ trong mục "phần AI đóng góp".
+- **AI-02:** thêm Artifact #9 với verdict INVALID. Thống kê mới: 9 artifact, 2 VALID (22%), 1 INVALID (11%), 6 INCOMPLETE (67%). PDF của AI-02 đã xuất lại (9 trang).
+- **Prompt log:** Mục 25.
+
+**AI-03** ([AI-03_Disclosure.md](AI-03_Disclosure.md), PDF 4 trang):
+- **Cấp độ AI:** cấp 4, theo thoả thuận (áp dụng cho HW01–HW06).
+- **Công cụ:** Claude Code (Sonnet 5.5), ChatGPT Web (GPT 5.6), Codex (chỉ dùng để kiểm chứng mindmap).
+- **Giai đoạn dùng AI:** đã tick các mục theo những gì transcript cho thấy.
+- **3 prompt chính:** nguyên văn, về defects, mindmap, test case.
+- **Phần AI đóng góp và không đóng góp:** chia theo Yêu cầu 1, 2, 3. AI không làm ảnh thiết bị, video, ảnh chụp tin, Actual, mô tả bug.
+- **Cách xác minh và trích dẫn IEEE:** đã điền.
+
+Bạn cần làm:
+- Điền các mục `[SV XÁC NHẬN]`, lớp/khoá, ngày và ký. Cam đoan trung thực là của bạn nên tôi để bạn xác nhận. Đặc biệt hãy xác nhận đã thực sự tự mở giáo trình và các link như bản nháp ghi.
+- Kiểm tra lại các ô đã tick ở "giai đoạn dùng AI".
+- Viết lại các đoạn trong AI-02 và AI-03 theo lời của mình nếu thấy chưa đúng.
+
+Việc còn lại: AI-05 (Privacy Checklist), AI Critique 200–300 từ, báo cáo chính và tự chấm điểm. Bạn muốn làm AI-05 tiếp không?
+
+
+---
+
+### [11:04:20 30/09/2026] SINH VIÊN
+
+Tiếp tục với AI-05 và Ai critique
+
+
+---
+
+### [11:06:46 30/09/2026] AI (Claude)
+
+Đang sửa giờ trong AI-05 cho khớp bằng chứng: ảnh thẻ sinh viên được đọc lúc 09:14:00, ảnh tin tuyển dụng lúc 22:29.
+
+
+---
+
+### [11:07:04 30/09/2026] AI (Claude)
+
+AI-05 và bản nháp AI Critique đã xong, nhưng cả hai còn cần bạn xác nhận hoặc viết lại trước khi nộp.
+
+**AI-05** ([AI-05_PrivacyChecklist.md](../ai/AI-05_PrivacyChecklist.md) và PDF 3 trang)
+- **Cách tick:** vì đây là lời khai của bạn về chính bạn, tôi chỉ tick sẵn khi bài có bằng chứng rõ: đã xác nhận cấp độ 4, không đưa code lên AI, code AI viết đã chạy, artifact đã gắn tag trong AI-02. Mỗi dòng có cột ghi bằng chứng. Các dòng còn lại để trống cho bạn xác nhận.
+- **Ngoại lệ dữ liệu cá nhân:** mục "Không nhập dữ liệu cá nhân của bạn" không thể tick. AI đã đọc ảnh thiết bị kèm thẻ sinh viên lúc 09:14:00 30/09/2026 (có họ tên, ngày sinh, MSSV) và ảnh chụp tin tuyển dụng lúc 22:29:30 29/09/2026 (có email của bạn). Đây là việc đã xảy ra, không hoàn tác được, nên tôi ghi thành "ngoại lệ cần khai báo". Từ nay bạn có thể che các thông tin này trước khi cho AI đọc.
+- **Chưa tick được:** prompt log chưa đủ (thiếu prompt và output gốc của ChatGPT), AI-03 chưa ký, báo cáo chính chưa có Mandatory Disclosure.
+
+**AI Critique** (mục 5 của [HW01_report.md](../report/HW01_report.md), 278 từ)
+- **Nội dung:** 3 lỗi mindmap, nhãn hallucination sai của Air Canada và điểm NVD 9.1 bị bỏ sót, chức năng đảo gió và test case 01-005 bị AI bỏ sót. Có thêm việc AI tự viết mô tả bug dù quy định cấm. Cuối đoạn là nguyên nhân chung và nguyên tắc rút ra. Mọi dữ kiện đều truy được về các artifact đã kiểm chứng.
+- **Cần viết lại:** đây là phản tư của chính bạn và giáo viên có thể hỏi về nó khi vấn đáp, nên bạn cần viết lại bằng lời của mình, giữ trong 200–300 từ. Phần "AI chiều theo khung câu hỏi" là suy luận, chưa được chứng minh.
+- **Cách đếm từ:** 278 là số âm tiết tách theo khoảng trắng. Nếu người chấm đếm theo từ ghép tiếng Việt thì số đó có thể thấp hơn, nên đừng viết sát mức 200.
+
+**Cập nhật kèm theo**
+- **AI-02:** thêm Artifact #10 (bản nháp AI Critique). Thống kê mới: 10 artifact, 2 VALID (20%), 1 INVALID (10%), 7 INCOMPLETE (70%).
+- **AI-03:** sửa lại cho khớp, khai báo AI soạn nháp AI Critique. PDF của AI-02, AI-03, AI-05 đã xuất lại.
+- **Prompt log:** ghi Mục 26.
+
+Còn lại: báo cáo chính (Mandatory Disclosure, tự chấm điểm), đóng gói zip đúng tên, và các phần bạn tự làm (mô tả bug, ký các biểu mẫu). Bạn muốn làm báo cáo chính tiếp không?
+
+
+---
+
+### [11:10:27 30/09/2026] SINH VIÊN
+
+làm báo cáo chính, nhưng hiện tại phần req đang quá dài, nên tóm lại nhưng đầy đủ các đầu mục trong yêu cầu "
+
+<pasted_content id="c4ff">
+Find 20 software defects publicized between 2022 and 2026.
+Mandatory: ≥ 5 defects related to AI/LLM (hallucination, prompt injection, bias).
+Each defect: source link, description, severity, consequences, solution.
+NEW: find 1 place where the AI is biased or hallucinates when explaining the defect.
+</pasted_content id="c4ff">
+
+" hơn 1000 dòng là quá nhiều
+
+
+---
+
+### [11:13:15 30/09/2026] AI (Claude)
+
+Đang xem thử các trang PDF của báo cáo để kiểm tra bảng có bị tràn không.
+
+
+---
+
+### [11:14:09 30/09/2026] AI (Claude)
+
+Báo cáo chính đã xong: [report/HW01_report.md](../report/HW01_report.md) dài 207 dòng, bản PDF [HW01_report.pdf](../report/HW01_report.pdf) dài 7 trang. Yêu cầu 2 trước đó là hơn 1000 dòng, giờ chỉ còn một bảng 20 dòng.
+
+**Nội dung**
+- **Đầu báo cáo:** thông tin sinh viên và link repo.
+- **1. Yêu cầu 1:** bảng 10 tin (vị trí, link, lương, mô tả, kỹ năng, có yêu cầu AI hay không). Bên dưới có 10 đoạn AI Impact Analysis, mindmap có đánh dấu lỗi và bảng 3 lỗi đối chiếu ISTQB.
+- **2. Yêu cầu 2:** bảng 20 lỗi đủ các trường đề yêu cầu (nguồn, mô tả, severity, hậu quả, giải pháp). Dòng 1–5 là lỗi AI: 3 prompt injection, 1 hallucination-like, 1 bias. Có đoạn ngắn về chỗ AI thiên lệch ở case 4 (Air Canada) và quan sát thêm ở case 3.
+- **3. Yêu cầu 3:** thông tin thiết bị và ảnh kèm thẻ sinh viên, bảng 15 test case (Objective, Verdict, edge case, video), 3 edge case AI bỏ sót, 5 video, bảng tổng kết Pass/Fail.
+- **4–7:** AI Audit (10 artifact, tỉ lệ 2 VALID / 1 INVALID / 7 INCOMPLETE, kèm khi nào nên dùng AI), AI Critique, Mandatory Disclosure, bảng tự chấm.
+- **Phụ lục:** trỏ tới prompt log, transcript và danh sách file nộp.
+
+**Đã kiểm tra:** PDF hiển thị bảng, ảnh mindmap và ảnh thiết bị đúng, các cột không còn bị bóp hẹp.
+
+**Cần bạn xem lại**
+- **Điểm tự chấm 88 chỉ là đề xuất của tôi:** tôi trừ vì 5 tin không có lương, 10 test case chưa chạy, AI-02, AI-03, AI-05 chưa ký. Bạn tự chấm lại rồi mới đặt tên file, ví dụ `23120031_HW01_AI_088.zip`.
+- **AI Critique là bản nháp AI:** bạn cần viết lại bằng lời của mình.
+- **Mô tả bug 01-005:** vẫn để `[SV TỰ VIẾT]`.
+- **Mandatory Disclosure:** tôi chép từ AI-02, có các mục `[SV XÁC NHẬN]` bạn cần xác nhận.
+- **Năm sản xuất và serial ghi "Không tìm thấy":** đề yêu cầu khai báo hai trường này.
+- **Còn thiếu:** file `git-log.txt`, lịch sử commit, và việc đóng gói zip. Đề yêu cầu commit cho từng bước, nhưng thư mục `23120031_HW01_AI` hiện chưa có commit nào (chỉ mới `git init`).
+
+Tôi đã ghi lần này vào prompt log ở Mục 27. Bạn muốn làm tiếp phần nào: tạo các commit theo từng bước rồi xuất git log, hay đóng gói zip?
+
+
+---
+
+### [11:22:24 30/09/2026] SINH VIÊN
+
+Kiểm tra lại lần cuối xem đã đủ các yêu cầu chưa, tôi đã commit đầy đủ rồi, phần zip tôi sẽ tự làm

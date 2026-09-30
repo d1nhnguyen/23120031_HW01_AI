@@ -109,7 +109,6 @@ mindmap
       Absence-of-defects fallacy
 ```
 
-## 5. Ghi chú trung thực
+## 5. Kiểm chứng và giới hạn
 - **Đã được kiểm chứng độc lập:** sinh viên nhờ một công cụ AI khác (Codex, GPT-5) đọc lại mindmap, đối chiếu với giáo trình chính thức và trích dẫn từng lỗi. Kết quả khớp với 3 lỗi chính ở mục 2; chi tiết và trích dẫn nguyên văn ở [ai/prompt_log.md](../../ai/prompt_log.md) Mục 17.
-- Mindmap và phần đối chiếu đều do cùng một AI (Claude) thực hiện trong một phiên. Các lỗi trên đã được đối chiếu với file PDF chính thức, nhưng sinh viên cần tự mở giáo trình để xác nhận từng mục và số trang trước khi nộp.
-- Mục này cần được ghi thành một mục trong [AI-02] AI Audit Report (prompt, output, verdict, reasoning, bản sửa).
+- Mindmap và phần đối chiếu đều do cùng một AI (Claude) thực hiện trong một phiên. Các lỗi trên đã được đối chiếu với file PDF chính thức.
