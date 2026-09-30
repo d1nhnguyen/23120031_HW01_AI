@@ -7,7 +7,17 @@
 <!-- Copy bảng tổng hợp từ req2-defects/defects.md -->
 
 ## 3. Yêu cầu 3 — Test case cho sản phẩm vật lý
-<!-- Copy bảng tổng hợp từ req3-device/testcases.md và Test Summary Report -->
+### 3.1 Thiết bị
+<!-- Copy từ req3-device/device.md: brand, model, năm, serial đã che, ảnh thiết bị + thẻ sinh viên -->
+
+### 3.2 15 test case
+<!-- Copy bảng từ req3-device/testcases.md; đánh dấu ≥ 3 edge case AI bỏ sót -->
+
+### 3.3 Thực thi và video
+<!-- Copy bảng link YouTube Unlisted (≥ 5) từ req3-device/videos.md -->
+
+### 3.4 Tổng kết và bug
+<!-- Copy Test Summary Report từ req3-device/excel/HW01_TestSummaryReport.xlsx; bug (nếu có) xem req3-device/bugs/ -->
 
 ## 4. AI Audit Report (Báo cáo kiểm toán AI)
 <!-- Tóm tắt; chi tiết từng artifact nằm trong ai/AI-02_AuditReport.pdf.
